@@ -12,8 +12,27 @@ body {
 CSS Selektory:
 
 ::first-letter			první písmeno
-::first-line				první řádek
+::first-line		    první řádek
 
-::before						uvnitř prvku, před obsahem
-::after							uvnitř prvku, za obsahem
+::before				uvnitř prvku, před obsahem, zacinaji existovat ve chvili, kdy se jim da vlastnost content (klidne muze byt contenct:"";
+::after				    uvnitř prvku, za obsahem, zacinaji existovat ve chvili, kdy se jim da vlastnost content (klidne muze byt contenct:"";
+
+Diky pseudoprvkum mam HTML krasne cisty. 
 */
+
+/* Pseudoprvky se pisi se dvema :: . Drive se psavaly i s jednou :, v prohlizeci to projde, ale spravna konvence je nyni tato.*/
+/* Pozor, ne vsechny CSS vlastnosti lze na pseudoprvcich stylovat!*/
+
+p::first-letter {
+	color: 22223b;
+	font-size: 36px;
+	font-weight: bold;
+	float: left;
+	margin-right: 10px;
+}
+
+p::first-line {
+	color: #da4167;
+	font-size: 160%;
+	font-style: italic;
+}
